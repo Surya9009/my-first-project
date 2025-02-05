@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=0.1">
+        <title>E commerce website</title>
+        <link rel="stylesheet" href="new program.css">
+    </head>
+    <body>
+        <header>
+            <h1>MY E COMMERCE STORE</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Cart (<span id="cart-count">0</span>)</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="products">
+                <div class="product">
+                    <img src="pepper.1.jpg" alt="Black Pepper">
+                    <h3>Black Pepper</h3>
+                    <p>$10.00</p>
+                    <button onclick="addToCart('Black Pepper', 10)">Add To Cart</button>
+                </div>
+                <div class="product">
+                    <img src="images.21.jpg" alt="Seasonsings">
+                    <h3>Seasonsings</h3>
+                    <p>$20.00</p>
+                    <button onclick="addToCart('Seasonsings', 20)">Add To Cart</button>
+                </div>
+                <div class="product">
+                    <img src="3.3.jpg" alt="Kiwi">
+                    <h3>Kiwi</h3>
+                    <p>$30.00</p>
+                    <button onclick="addToCart('Kiwi', 30)">Add To Cart</button>
+                </div>
+                <div class="product">
+                    <img src="4.jpg" alt="Green Pepper">
+                    <h3>Green Pepper</h3>
+                    <p>$40.00</p>
+                    <button onclick="addToCart('Green Pepper', 40)">Add To Cart</button>
+                </div>
+                <div class="product">
+                    <img src="5.jpg" alt="Green Pepper Plant">
+                    <h3>Green Pepper Plant</h3>
+                    <p>$50.00</p>
+                    <button onclick="addToCart('Green Pepper Plant', 50)">Add To Cart</button>
+                </div>
+                <div class="product">
+                    <img src="images66.jpg" alt="Dragon Fruit">
+                    <h3>Dragon Fruit</h3>
+                    <p>$60.00</p>
+                    <button onclick="addToCart('Dragon Fruit', 60)">Add To Cart</button>
+                </div>
+                <div class="product">
+                    <img src="7.jpg" alt="Ooty Fresh Pepper">
+                    <h3>Ooty Fresh Pepper</h3>
+                    <p>$70.00</p>
+                    <button onclick="addToCart('Ooty Fresh Pepper', 70)">Add To Cart</button>
+                </div>
+                <div class="product">
+                    <img src="images.88.jpg" alt="Fresh Kiwi">
+                    <h3>Fresh Kiwi</h3>
+                    <p>$80.00</p>
+                    <button onclick="addToCart('Fresh Kiwi', 80)">Add To Cart</button>
+                </div>
+                <div class="product">
+                    <img src="images.99.jpg" alt="Peanuts">
+                    <h3>Peanuts</h3>
+                    <p>$90.00</p>
+                    <button onclick="addToCart('Peanuts', 90)">Add To Cart</button>
+                </div>
+                <div class="product">
+                    <img src="images.a" alt="Grape">
+                    <h3>Grape</h3>
+                    <p>$100.00</p>
+                    <button onclick="addToCart('Grape', 100)">Add To Cart</button>
+                </div>
+                <div class="product">
+                    <img src="images.b.jpg" alt="Lychee">
+                    <h3>Lychee</h3>
+                    <p>$110.00</p>
+                    <button onclick="addToCart('Lychee', 110)">Add To Cart</button>
+                </div>
+                <div class="product">
+                    <img src="images.c" alt="Strawberries">
+                    <h3>Strawberries</h3>
+                    <p>$120.00</p>
+                    <button onclick="addToCart('Strawberries', 120)">Add To Cart</button>
+                </div>
+            </section>
+            <section id="cart">
+                <h2>Shopping Cart</h2>
+                <ul id="cart-items"></ul>
+                <p>Total:$<span id="cart-total">0.00</span></p>
+                <button onclick="clearCart()">Clear Cart</button>
+            </section>
+        </main>
+        <footer>
+            <p>2025 my e commerce store</p>
+        </footer>
+        <script>
+            let cart = [];
+let total = 0;
+
+function updateCart(){
+    const cartItems = document.getElementById('cart-items');
+    const cartTotal = document.getElementById('cart-total');
+    const cartCount = document.getElementById('cart-count');
+
+    cartItems.innerHTML = '';
+
+    cart.forEach(item =>{
+        const li =document.createElement('li');
+        li.textContent = `${item.name} - $${item.price.toFixed(2)}`;
+        cartItems.appendChild(li);
+    });
+    cartTotal.textContent = total.toFixed(2);
+    cartCount.textContent = cart.length
+}
+function addToCart(name, price){
+    cart.push({name,price});
+    total += price;
+    updateCart();
+}
+
+function clearCart(){
+    cart =[];
+    total = 0;
+    updateCart();
+}
+        </script>
+    </body>
+</html>
