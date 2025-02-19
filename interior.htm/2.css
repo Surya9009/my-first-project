@@ -1,0 +1,397 @@
+body{
+    font-family: "Lucida Console", "Courier New", monospace;
+    margin: 0;
+    padding: 0;
+    line-height: 1.8;
+}
+header{
+    background: #7c5d5d;
+    color: rgb(6, 7, 8);
+    padding: 1rem 0;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 400px;     
+}
+.nav-links{
+    list-style: none;
+    display: flex;
+    padding-left: 600px;
+}
+.nav-links li{
+    margin-left: 20px;
+}
+.nav-links li a{
+    text-decoration: none;
+    color:azure;
+    padding:8px 15px;
+    justify-content: space-between;
+    border-radius: 10px;
+    background-color: rgb(113, 195, 219);
+}
+.nav-links li a:hover{
+    color:crimson;
+    border-radius: 10px;
+    background-color: rgb(236, 195, 166);
+}
+
+.logo{
+    font-weight: bolder;
+    padding-left: 40px;
+    font-size: 30px;
+    text-decoration: none;
+    color:rgb(19, 12, 12);
+   
+}
+.red-letter {
+    color: red;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ensure the section takes up the full height of the viewport */
+    text-align: center; /* Centers the text inside the content */
+    padding-bottom: 120px;
+  }
+  
+  .home-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+  }
+  
+  .button {
+    margin-top: 5px; /* Space between the text and the button */
+  }
+  
+  .btn {
+    padding: 5px 10px; /* Adjust button size */
+    background-color: #007BFF; /* Button color */
+    color: white; /* Button text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .btn:hover {
+    background-color: #0056b3; /* Button hover color */
+  }
+  
+
+.hero{
+    background: url('interior..1.avif') no-repeat center center/cover;
+    color: rgb(226, 217, 206);
+    height: 80vh;
+    display: flex;
+    width: 100%;
+    height: 500px;
+}
+
+#Services {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    background: url('wall.jpg') no-repeat center center/cover;
+    margin: 10px;
+}
+
+.text-container1 {
+    text-align: center;
+    color:aliceblue;
+    
+}
+
+.text-container1 .service-title,
+.text-container1 .service-description{
+    font-weight: bolder;
+    font-size: 25px;
+}
+.service-title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.service-description {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.image-container img {
+    max-width: 100%;
+    margin-bottom: 10px;
+}
+.Project{
+   /* background: url('background.0img.jpg') no-repeat center center/cover;*/
+    color: rgb(69, 226, 226);
+    height: 80vh;
+    display: flex;
+    width: 100%;
+    height: 200px;
+    margin: 10px;
+    
+}
+.text-container2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    max-width: 350px;
+    padding: 20px;
+    background: rgba(212, 57, 9, 0.5); /* Optional: to make text stand out more */
+    border-radius: 10px;
+    margin-left: 100px;
+    box-sizing: border-box;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.text-container2:hover {
+    transform: translateY(-10px); /* Slightly lift the container when hovered */
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2); /* Add shadow effect */
+}
+.btn {
+    padding: 5px 20px;
+    background-color: #cf32ba;
+    color: rgb(33, 22, 99);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+    padding-top: 5px;
+}
+.Moderninterior {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Create two equal-width columns */
+    grid-template-rows: repeat(2, 1fr); /* Create two equal-height rows */
+    gap: 10px; /* Adds spacing between the grid items */
+    padding: 10px;
+    background: url('wall.jpg') no-repeat center center/cover;
+    
+}
+.Moderninterior h1{
+    color: rgb(247, 248, 243);
+    font-size: 20px;
+}
+
+.text-container3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    border-radius: 10px;
+    overflow: hidden; /* Ensures images don't overflow */
+}
+
+.text-container3 img {
+    width: 350px; /* Make the image fill the container */
+    height: 75%; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensure images cover the space without stretching */
+    justify-content: start;
+}
+.Moderninterior .text-content {
+    width: 50%; /* Adjust text container width as needed */
+}
+
+.Moderninterior .text-content h4, 
+.Moderninterior .text-content p {
+    margin: 0; /* Remove default margin */
+    padding-left: 10px;
+    color:rgb(247, 247, 248)
+}
+.text-container5{
+    display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+  text-align: center;
+   max-width: 350px;
+    padding: 20px;
+   background: rgba(194, 100, 100, 0.5); /*Optional: to make text stand out more */
+    border-radius: 10px;
+    margin-left: 100px;
+   box-sizing: border-box;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.text-container5 img{
+    border-radius: 50%;
+}
+.text-container5:hover {
+    transform: translateY(-10px); /* Slightly lift the container when hovered */
+
+
+    box-shadow: 0px 10px 15px rgba(24, 18, 21, 0.2); /* Add shadow effect */
+}
+.Projectplan{
+    height: auto;
+    display: flex;
+   padding-left: 150px;
+   margin: 10px;
+}
+.success{
+    background-color: rgb(91, 109, 102);
+    margin: 10px;
+}
+.overall-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   text-align: center;
+    margin-left: 10px;
+}
+.overall-container .text-container6{
+    padding-left:90px;
+    padding-right: 80px;
+    margin-left: 10px;
+    justify-content: center;
+    align-items: center;
+}
+ .text-container6 .exp{
+    color: #1f0101;
+    font-weight: bolder;
+    font-size: 50px;
+    display: flex;
+    margin-left: 50px;
+}
+ .text-container6 .content{
+    color: #1f0101;
+    font-weight: bold;
+    font-size: 16px;
+    display: flex;
+    padding-left:12px;
+    letter-spacing: 2px;
+}
+.text-container7 {
+    text-align: center; /* Centers the content horizontally */
+    padding-top: 20px; /* Adds space at the top if needed */
+}
+ .btn{
+    text-align: left;
+ }
+
+.centered-heading {
+    margin-bottom: 20px; /* Adds space between the heading and the content */
+    font-size: 30px;
+    padding-right: 150px;
+}
+
+.text-content0 {
+    text-align: left; /* Aligns the paragraph text to the left */
+    margin: 0 auto;
+    max-width: 800px; /* Optionally, add a maximum width to control text width */
+    padding-left: 70px;
+}
+.happy11{
+    background: url('.videos.1234.png') no-repeat center center/cover;
+}
+footer{
+    background: #9da8be;
+    color: #180811;
+    text-align: center;
+    padding: 3rem 0;
+}
+.contact9{
+    background: url('images.mmm111.jpg') no-repeat center center/cover;
+    margin-left: 10px;
+
+}
+
+.experience2{
+    text-align: center;
+    padding-left: 0%;
+    color: #cf32ba;
+    background-color: #a9f7e6;
+    
+   
+
+
+    
+}
+.text-container0{
+   background-color: #cf32ba;
+    
+    padding: center;
+    
+}
+.text-container0 .btn{
+    color: #115e0a;
+   font-size: 280%;
+}
+.text-conttainer0 p{
+    
+    background: #7c5d5d;
+    color: #130b41;
+    display: flex;
+    padding: left;
+    max-width: 50%;
+    padding-left: 5%;
+    font-size: 20px;
+    
+}
+.text-conttainer0{
+    color: #f7eded;
+    font-size: 30px;
+    background: #007BFF;
+}
+.project1{
+    background: #007BFF;
+   
+}
+.text-container01 .p1{
+    display: flex;
+    padding: left;
+}
+.text-container01 h1{
+    color: #f8eeee;
+    padding: 10%;
+    font-size: 30px;
+    width: auto;
+}
+.text-container01 p{
+    color: #092e09;
+    font-size: 20px;
+    padding-left: 10%;
+}
+.text-container01 img{
+    padding: 10%;
+}
+.text-container012 h1{
+    color: #af0909;
+    font-size: 40px;
+    padding-left: 10%;
+}
+.text-container012 p{
+    color: #7499e4;
+    font-size: 20px;
+    padding-left: 10%;
+}
+.text-container012 a{
+    padding-left: 45%;
+}
+.text-container01 a{
+    padding-left: 45%; 
+}
+.contact1234{
+    padding-left: 40%;
+}
+.contact1234 div{
+    color: #007BFF;
+    font-size: 20px;
+}
+
